@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*
+PALETAS DE CORES
+#708CCD
+#5E8CF7
+#7FE4FA
+*/
+
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: transparent;
+}
+
+body, html{
+    background: url(../img/04.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%);
+    overflow: hidden;
+
+    background-color: transparent;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+   
+
+    transition: width 0.3s, heigth 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+form > div.campo{
+    border: 4px solid;
+    display: block;
+    border-radius: none;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+   
+}
+
+div.campo > input{
+    
+    font-size: 1em;
+    width: 100%;
+    height: 80%;
+    padding: 0px;
+    border-radius: none;
+    padding: 4px;
+    border: 2px;
+    transform: translateY(-0px);
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    color: rgb(66, 8, 204);
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    margin: 1px;
+    
+}
+
+
+form > a.botao:hover{
+    background-color: #d48383;
+}
